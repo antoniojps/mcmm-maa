@@ -16,7 +16,7 @@ void setupBlink()
   pinMode(13, OUTPUT);
 }
 
-// update interval of blink according to isSpeedingUp
+// lower interval when speeding up and opposite
 void updateInterval()
 {
   if (isSpeedingUp)
@@ -55,7 +55,7 @@ void blinkLed(int interval)
   delay(interval);
 }
 
-void blink()
+void blinkWithAlternateSpeed()
 {
   reverseSpeedHandler();
   updateInterval();

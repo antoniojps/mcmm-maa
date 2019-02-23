@@ -6,7 +6,7 @@ void setup()
 
 void loop()
 {
-  blink();
+  blinkWithAlternateSpeed();
 
   Serial.print("blinked - ");
   Serial.print("with interval ");
